@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="void-wrapper">
+        <button id="theme-toggle" class="theme-btn-fixed" aria-label="Toggle Theme">
+            <span class="icon">☀︎</span>
+        </button>
+
+        <header class="main-header-centered">
+            <img src="logo.png" alt="Logo" class="app-logo-raw">
+            <h1 class="brand-name-large">EYAS</h1>
+            <p class="app-tagline-mono">TIKTOK_USER_INFO_SCRAPER</p>
+        </header>
+
+        <main class="utility-center">
+            <div class="monolithic-card">
+                <div class="input-container">
+                    <span class="mono-prefix">@</span>
+                    <input type="text" id="username-input" placeholder="INPUT_USERNAME" autocomplete="off" spellcheck="false">
+                    <button id="search-btn" class="primary-btn">FETCH DATA</button>
+                </div>
+                <p id="error-msg" class="status-msg mono hidden"></p>
+            </div>
+
+            <div id="app-content" class="hidden fade-in">
+                <div class="profile-hero-vertical">
+                    <div class="avatar-void-rounded">
+                        <img id="u-avatar" src="" alt="Avatar">
+                    </div>
+                    <div class="identity-void">
+                        <h2 id="u-nickname"></h2>
+                        <p id="u-handle" class="mono"></p>
+                        <p id="u-bio"></p>
+                        <a id="u-link" href="#" target="_blank" class="view-link mono">VIEW_PROFILE</a>
+                    </div>
+                </div>
+
+                <div class="meta-row">
+                    <div class="pill mono" id="u-region-val"></div>
+                    <div class="pill mono">LANG: <span id="u-lang-val"></span></div>
+                </div>
+
+                <div class="grid-stats">
+                    <div class="stat-box"><span class="val" id="s-followers">-</span><span class="lab mono">FOLLOWERS</span></div>
+                    <div class="stat-box"><span class="val" id="s-following">-</span><span class="lab mono">FOLLOWING</span></div>
+                    <div class="stat-box"><span class="val" id="s-hearts">-</span><span class="lab mono">HEARTS</span></div>
+                    <div class="stat-box"><span class="val" id="s-videos">-</span><span class="lab mono">VIDEOS</span></div>
+                    <div class="stat-box full"><span class="val" id="s-friends">-</span><span class="lab mono">FRIENDS</span></div>
+                </div>
+
+                <div class="details-pane binary-surface">
+                    <div class="pane-header">
+                        <h3 class="pane-title-clean mono">TECHNICAL_DETAILS</h3>
+                    </div>
+                    <div class="details-list">
+                        <div class="d-row">
+                            <span class="d-lab mono">USER_ID</span>
+                            <div class="copy-field">
+                                <span id="d-userid" class="mono"></span>
+                                <button class="copy-btn" onclick="copyText('d-userid')">COPY</button>
+                            </div>
+                        </div>
+
+                        <div class="d-split">
+                            <div class="d-row"><span class="d-lab mono">VERIFIED</span><span id="d-verified"></span></div>
+                            <div class="d-row"><span class="d-lab mono">PRIVATE</span><span id="d-private"></span></div>
+                        </div>
+                        
+                        <div class="d-row"><span class="d-lab mono">CREATED_AT</span><span id="d-created"></span></div>
+                        
+                        <div class="d-row">
+                            <span class="d-lab mono">SEC_UID</span>
+                            <div class="copy-field">
+                                <span id="d-secuid" class="mono truncate"></span>
+                                <button class="copy-btn" onclick="copyText('d-secuid')">COPY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="dl-json" class="secondary-btn mono">DOWNLOAD_JSON</button>
+            </div>
+        </main>
+
+        <footer class="status-footer">
+            <div class="status-indicator">
+                <span class="pulse-dot"></span>
+                <span class="mono">SYSTEM_READY</span>
+            </div>
+            <div class="credits">
+                <span class="mono">DEV_GITHUB: <a href="https://github.com/haithamaouati" target="_blank">HAITHAM_AOUATI</a></span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
