@@ -79,8 +79,19 @@ input::placeholder { color: var(--text-muted); font-size: 11px; text-transform: 
 .map-header { font-size: 9px; color: var(--text-muted); margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
 .cool-map-surface { width: 100%; height: 260px; position: relative; overflow: hidden; background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%); }
 #world-map-wrapper svg { width: 100%; height: 100%; fill: var(--bg); stroke: var(--border); stroke-width: 0.5px; }
-.country-active { fill: var(--accent) !important; opacity: 0.2; stroke: var(--accent) !important; stroke-width: 1.5px !important; animation: mapPulse 3s infinite ease-in-out; }
-@keyframes mapPulse { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.3; } }
+.country-active { 
+    fill: var(--accent) !important; 
+    opacity: 0.8; /* Increased base opacity for clarity */
+    stroke: var(--accent) !important; 
+    stroke-width: 2.5px !important; /* Thicker border for definition */
+    filter: drop-shadow(0 0 5px var(--accent)); /* Focus glow */
+    animation: mapPulse 1.5s infinite ease-in-out; /* Faster frequency for urgency */
+}
+
+@keyframes mapPulse { 
+    0%, 100% { opacity: 0.4; stroke-width: 2.5px; } 
+    50% { opacity: 0.9; stroke-width: 4px; } /* Pulse both opacity and stroke thickness */
+}
 #active-country-label { text-align: center; font-size: 10px; margin-top: 10px; color: var(--text-muted); letter-spacing: 1px; }
 
 /* Statistics */
