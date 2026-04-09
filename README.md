@@ -7,3 +7,5 @@
   </p>
 
   [https://haithamaouati.github.io/clawkscraper](https://haithamaouati.github.io/clawkscraper)
+
+[Download](https://github.com/haithamaouati/clawkscraper/releases/download/Clawk/Clawk_v1.0.0.APK)
