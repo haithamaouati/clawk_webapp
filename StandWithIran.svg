@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" role="img" aria-label="#StandWithIran">
+  <title>#StandWithIran</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="130" height="20" rx="3" fill="#fff"/>
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="0" height="20" fill="#555"/>
+    <rect x="0" width="99" height="20" fill="#555"/>
+    <!-- Iranian flag horizontal stripes (narrower) -->
+    <rect x="99" y="0" width="31" height="6.66" fill="#239F40"/> <!-- Green -->
+    <rect x="99" y="6.66" width="31" height="6.66" fill="#FFFFFF"/> <!-- White -->
+    <rect x="99" y="13.33" width="31" height="6.67" fill="#DA0000"/> <!-- Red -->
+    <!-- Simplified emblem -->
+    <text x="115" y="12" font-family="Arial" font-size="7" fill="#DA0000" text-anchor="middle">☫</text>
+    <rect width="130" height="20" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text aria-hidden="true" x="495" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="890">#StandWithIran</text>
+    <text x="495" y="140" transform="scale(.1)" fill="#fff" textLength="890">#StandWithIran</text>
+  </g>
+</svg>
